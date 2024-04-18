@@ -9,78 +9,62 @@ body {
   background: url(../images/backgrounds/architecture.jpg) center no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 100%;
+  font-family: 'Gabriela', serif; /* Change font to Gabriela for headings */
+  font-size: 16px; /* Set base font size */
+  line-height: 1.6; /* Increase line height for better readability */
+  color: #333; /* Change text color to a darker shade */
 }
 
 .wrapper {
   margin: 0 auto;
-  width: 60%;
-  padding-bottom: 40px;
+  width: 80%; /* Increase wrapper width for better content visibility */
+  max-width: 1200px; /* Set maximum width for larger screens */
+  padding: 20px; /* Add padding to wrapper for spacing */
 }
 
 #content {
-  padding: 20px;
-  background: rgba(255,255,255,.85);
-}
-
-h1, h2 {
-  font-family: 'Gabriela', serif;
-  color: #fff;
+  background: rgba(255,255,255,.95); /* Increase background opacity for better contrast */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  padding: 30px; /* Increase padding for better content spacing */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow effect for depth */
 }
 
 h1 {
-  font-size: 3.5em;
-  margin-bottom: 0;
+  font-size: 3em; /* Increase font size for main headings */
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+  color: white;
 }
 
 h2 {
-  font-size: 1.5em;
-  margin-top: .5em;
+  font-size: 2em; /* Increase font size for subheadings */
+  margin-top: 20px; /* Add margin top for spacing */
+  color: white;
 }
 
 h3 {
-  font-family: 'Gabriela', serif;
-  font-size: 1.5em;
-  margin-top: .5em;
+  font-size: 1.5em; /* Adjust font size for smaller headings */
+  margin-top: 20px; /* Add margin top for spacing */
 }
 
 img {
+  display: block;
+  margin: 20px auto; /* Center align images and add margin for spacing */
   max-width: 100%;
-  width: 100%;
   height: auto;
+  border-radius: 8px; /* Add border radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow effect for depth */
 }
 
 p {
-  font-size: 1em;
+  font-size: 1em; /* Keep font size consistent */
+  margin-bottom: 20px; /* Add margin bottom for spacing */
 }
 
 a {
-  color: black;
+  color: #007bff; /* Change link color to a blue shade */
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
-}
-
-@media only screen and (max-width: 1042px) {
-  .wrapper {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 784px) {
-  body {
-    font-size: 120%;
-  }
-  h1 {
-    font-size: 2.5em;
-  }
-  h2 {
-    font-size: 1em;
-  }
-  .wrapper {
-    width: 95%;
-  }
+  text-decoration: underline; /* Add underline on hover for better UX */
 }
